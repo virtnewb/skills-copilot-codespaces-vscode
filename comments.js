@@ -8,4 +8,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/comments', function(req, res) {
-  fs.readFile('comments.json',
+    fs.readFile('comments.json', function(err, data) {
+        // Handle file reading
+    });
+});
